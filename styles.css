@@ -1,0 +1,26 @@
+body {
+    font-family: Roboto, serif;
+}
+
+div.content {
+    padding-left: 120px;
+}
+
+h1 {
+    color: black;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 56.25px;
+    margin-bottom: 40px;
+}
+
+.highlighted {
+    color: #EC7700;
+    font-weight: 600;
+}
+
+p.sub {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+}
