@@ -1,22 +1,127 @@
+html {
+    height: 100%;
+}
+
 body {
+    height: 89%;
+    margin: 0;
+    padding: 0;
     font-family: Roboto, serif;
+    background: linear-gradient(180deg, #FFFFFF, #f8f8f8) no-repeat fixed;
 }
 
 header {
-    padding: 4px 160px 12px 160px;
+    padding: 12px 160px 12px 160px;
     display: flex;
     align-items: center;
     border-bottom: 1px solid #D9D9D9;
+    background-color: #FFFFFF;
 }
 
 .content {
-    padding-left: 120px;
+    min-height: 100%;
+    padding: 0 120px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.content__text {
+    margin-top: 156px;
 }
 
 .content__text__row {
     font-weight: 400;
     font-size: 20px;
     line-height: 32px;
+    align-items: center;
+    display: flex;
+}
+
+.content__text__row__checkmark {
+    width: 24px;
+    height: 24px;
+    margin: 4px 16px 4px 0;
+}
+
+.login__dialog {
+    box-sizing: border-box;
+    position: relative;
+    border: 2px solid #61A60E;
+    border-radius: 16px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 40px 24px 40px;
+    margin-top: 104px;
+}
+
+.login__dialog__header {
+    position: absolute;
+    top: -20px;
+    background-color: #61A60E;
+    border-radius: 4px;
+    padding: 8px 16px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    color: #FFFFFF;
+}
+
+.login__dialog__input {
+    width: 320px;
+    height: 56px;
+}
+
+.login__dialog__button {
+    width: 320px;
+    height: 56px;
+    margin: 0;
+}
+
+.login__dialog__info {
+    width: 252px;
+}
+
+.login__dialog__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16.41px;
+    text-align: center;
+}
+
+.login__dialog__text--primary {
+    color: #54565A;
+}
+
+.login__dialog__text--secondary {
+    color: #AEAEAE;
+}
+
+.login__dialog__text--size-small {
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.login__dialog__text__link {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.login__dialog__text__link--primary {
+    color: #EC7700;
+}
+
+.login-logo {
+    border: 1px solid #D9D9D9;
+    border-radius: 3px;
+    padding: 20.41px 20px;
+    margin: 0 6px;
+    cursor: pointer;
 }
 
 h1 {
@@ -27,19 +132,28 @@ h1 {
     margin-bottom: 40px;
 }
 
-.h1--color-orange {
+.color-orange {
     color: #EC7700;
 }
 
-.h1--weight-bold {
+.weight-bold {
     font-weight: 600;
 }
 
-.h1--display-block {
+.display-block {
     display: block;
 }
 
-.button {
+h3 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 32px;
+    color: #54565A;
+    margin-bottom: 12px;
+    margin-top: 0;
+}
+
+button {
     padding: 8px 16px;
     text-align: center;
     margin: 0 4px;
@@ -56,8 +170,78 @@ h1 {
 }
 
 .button--secondary {
-    background: none;
+    background-color: #FFFFFF;
     border: 1px solid #54565A;
     color: #000000;
     font-weight: 400;
+}
+
+.button--size-large {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 1px;
+    padding: 16px 24px;
+    height: 56px;
+}
+
+input {
+    box-sizing: border-box;
+    margin: 12px 0;
+    padding: 12px 16px;
+    border: 1px solid #AEAEAE;
+    border-radius: 8px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.content__rating {
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+}
+
+.content__rating__fb-logo {
+    margin-right: 12px;
+}
+
+.star {
+    font-size: x-large;
+    width: 24px;
+    display: inline-block;
+    color: gray;
+}
+
+.star:last-child {
+    margin-right: 0;
+}
+
+.star:before {
+    content: '\2605';
+}
+
+.star.full {
+    color: #ECC600;
+}
+
+.star.half:after {
+    content: '\2605';
+    color: #ECC600;
+    position: absolute;
+    margin-left: -20px;
+    width: 10px;
+    overflow: hidden;
+}
+
+.rating-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    color: #AEAEAE;
+
+    strong {
+        color: #47566E;
+    }
 }

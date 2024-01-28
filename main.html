@@ -8,6 +8,7 @@
     <title>Získavajte odmeny vo svojich obľúbených obchodoch</title>
 </head>
 <body>
+<div class="background"></div>
 <header style="height: 50px; justify-content: space-between">
     <div style="display: flex">
         <img src="assets/tipli_logo.png" alt="tipli">
@@ -19,13 +20,63 @@
 </header>
 <div class="content">
     <div class="content__text">
-        <h1><span class="h1--color-orange h1--weight-bold h1--display-block"> Dostávejte peníze zpět </span> z nákupů v
+        <h1><span class="color-orange weight-bold display-block"> Dostávejte peníze zpět </span> z nákupů v
             eshopech</h1>
-        <p class="content__text__row">Peníze vám vráti přes <strong>1400 eshopů</strong> až do výše
-            <strong>26,9%</strong> z nákupu</p>
-        <p class="content__text__row">Navíc získate přístup k exkluzívním nabídkam a slevovým kupónům</p>
-        <p class="content__text__row">Jednoduché a úplně zdarma</p>
+        <p class="content__text__row">
+            <img class="content__text__row__checkmark" src="assets/checkmark.png" alt="tipli">
+            <span>Peníze vám vráti přes <strong>1400 eshopů</strong> až do výše <strong>26,9%</strong> z nákupu</span>
+        </p>
+        <p class="content__text__row">
+            <img class="content__text__row__checkmark" src="assets/checkmark.png" alt="tipli">
+            <span>Navíc získate přístup k exkluzívním nabídkam a slevovým kupónům</span></p>
+        <p class="content__text__row">
+            <img class="content__text__row__checkmark" src="assets/checkmark.png" alt="tipli">
+            <span>Jednoduché a úplně zdarma</span></p>
     </div>
+
+    <div class="content__login">
+        <div class="login__dialog">
+            <div class="login__dialog__header">+ 300 Kč BONUS K Novému účtu</div>
+            <h3>Začněte získavat peníze zpět</h3>
+            <input type="email" class="login__dialog__input input--enabled" placeholder="Zadejte váš email">
+            <button class="button login__dialog__button button--primary button--size-large">Založit účet ZDARMA</button>
+            <div class="login__dialog__info">
+                <p class="login__dialog__text login__dialog__text--primary">nebo se zaregistrujte pomocí svého účtu</p>
+                <div style="display: flex; justify-content: center;">
+                    <div class="login-logo"><img src="assets/fb_logo.png" width="24"></div>
+                    <div class="login-logo"><img src="assets/apple_logo.png" width="24"></div>
+                    <div class="login-logo"><img src="assets/google_logo.png" width="20"></div>
+                </div>
+                <p class="login__dialog__text login__dialog__text--secondary login__dialog__text--size-small">Registrací
+                    souhlasíte s podmínkami užití a se <a class="login__dialog__text__link">zpracováním osobních
+                        údajů.</a></p>
+                <p class="login__dialog__text login__dialog__text--primary login__dialog__text--size-small">Máte již
+                    účet? <a class="login__dialog__text__link login__dialog__text__link--primary">Přihlaste se</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="content__rating">
+        <div class="content__rating__fb-logo">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M32 15.6946C32 7.02602 24.8373 0 16 0C7.16274 0 0 7.02602 0 15.6946C0 23.529 5.84767 30.0218 13.5014 31.2V20.2353H9.44219V15.6946H13.5014V12.2375C13.5014 8.30739 15.886 6.13165 19.5419 6.13165C21.2953 6.13165 23.1277 6.44124 23.1277 6.44124V10.3025H21.1112C19.1211 10.3025 18.5074 11.5151 18.5074 12.7535V15.6946H22.9436L22.2334 20.2353H18.5074V31.2C26.1523 30.0218 32 23.529 32 15.6946Z"
+                      fill="#1877F2"/>
+            </svg>
+        </div>
+        <div class="content__rating__rating">
+            <div class="rating-stars">
+                <span class="star full"></span>
+                <span class="star full"></span>
+                <span class="star full"></span>
+                <span class="star full"></span>
+                <span class="star half"></span>
+            </div>
+            <div class="rating-text">
+                <strong>4,8/5</strong> (1 tis. hodnocení)
+            </div>
+        </div>
+    </div>
+    <img src="assets/donkey.png" style="position: absolute; bottom: 0; right: 15px">
 </div>
 </body>
 </html>
