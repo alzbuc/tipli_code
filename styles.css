@@ -84,6 +84,10 @@ header {
     border-radius: 4px;
     background-color: #FFFFFF;
     color: #61A60E;
+
+    strong {
+        font-weight: 800;
+    }
 }
 
 .login__dialog__input {
