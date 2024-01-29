@@ -6,35 +6,40 @@ body {
     height: 89%;
     margin: 0;
     padding: 0;
-    font-family: Roboto, serif;
+    font-family: Roboto, sans-serif;
     background: linear-gradient(180deg, #FFFFFF, #f8f8f8) no-repeat fixed;
 }
 
 header {
-    padding: 12px 160px 12px 160px;
+    box-sizing: border-box;
+    padding: 16px;
     display: flex;
     align-items: center;
     border-bottom: 1px solid #D9D9D9;
     background-color: #FFFFFF;
+    height: 64px;
+    justify-content: space-between
 }
 
 .content {
-    min-height: 100%;
-    padding: 0 120px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding-bottom: 24px;
 }
 
 .content__text {
-    margin-top: 156px;
+    padding: 40px 24px 0 24px;
+    margin-top: 0;
+    /*margin-top: 156px;*/
+    color: #000000;
 }
 
 .content__text__row {
     font-weight: 400;
-    font-size: 20px;
-    line-height: 32px;
-    align-items: center;
+    font-size: 16px;
+    line-height: 24px;
+    align-items: flex-start;
     display: flex;
 }
 
@@ -42,6 +47,11 @@ header {
     width: 24px;
     height: 24px;
     margin: 4px 16px 4px 0;
+}
+
+.content__login {
+    padding: 0 12px 31.52px 12px;
+    width: 351px;
 }
 
 .login__dialog {
@@ -55,7 +65,7 @@ header {
     justify-content: center;
     align-items: center;
     padding: 40px 40px 24px 40px;
-    margin-top: 104px;
+    margin-top: 40px;
 }
 
 .login__dialog__header {
@@ -116,6 +126,13 @@ header {
     color: #EC7700;
 }
 
+.login__dialog__donkey {
+    position: absolute;
+    bottom: -90px;
+    right: -110px;
+    display: none;
+}
+
 .login-logo {
     border: 1px solid #D9D9D9;
     border-radius: 3px;
@@ -127,9 +144,19 @@ header {
 h1 {
     color: black;
     font-weight: 400;
-    font-size: 48px;
-    line-height: 56.25px;
-    margin-bottom: 40px;
+    font-size: 32px;
+    line-height: 48px;
+    margin-bottom: 24px;
+    margin-top: 0;
+}
+
+h3 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 32px;
+    color: #54565A;
+    margin-bottom: 12px;
+    margin-top: 0;
 }
 
 .color-orange {
@@ -144,13 +171,8 @@ h1 {
     display: block;
 }
 
-h3 {
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 32px;
-    color: #54565A;
-    margin-bottom: 12px;
-    margin-top: 0;
+.display-flex {
+    display: flex;
 }
 
 button {
@@ -160,6 +182,9 @@ button {
     height: 40px;
     border-radius: 6px;
     cursor: pointer;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
 }
 
 .button--primary {
@@ -198,8 +223,10 @@ input {
 
 .content__rating {
     display: flex;
-    width: 100%;
+    width: 50%;
     align-items: flex-start;
+    justify-content: center;
+    padding-bottom: 24px;
 }
 
 .content__rating__fb-logo {
@@ -210,11 +237,7 @@ input {
     font-size: x-large;
     width: 24px;
     display: inline-block;
-    color: gray;
-}
-
-.star:last-child {
-    margin-right: 0;
+    color: #DEDEDE;
 }
 
 .star:before {
@@ -243,5 +266,48 @@ input {
 
     strong {
         color: #47566E;
+    }
+}
+
+@media (min-width: 641px) {
+    header {
+        padding: 12px 160px 12px 160px;
+    }
+
+    .content {
+        padding: 0 120px;
+    }
+
+    h1 {
+        font-size: 48px;
+        line-height: 56.25px;
+        margin-bottom: 40px;
+    }
+
+    .content__text {
+        padding: 0;
+        align-self: center;
+    }
+
+    .content__text__row {
+        font-size: 20px;
+        line-height: 32px;
+    }
+
+    .content__login {
+        width: 440px;
+    }
+
+    .login__dialog {
+        margin-top: 104px;
+    }
+
+    .login__dialog__donkey {
+        display: block;
+    }
+
+    .content__rating {
+        justify-content: flex-start;
+        margin-top: -60px;
     }
 }
