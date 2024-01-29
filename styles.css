@@ -223,7 +223,7 @@ input {
 
 .content__rating {
     display: flex;
-    width: 50%;
+    width: 100%;
     align-items: flex-start;
     justify-content: center;
     padding-bottom: 24px;
@@ -309,5 +309,6 @@ input {
     .content__rating {
         justify-content: flex-start;
         margin-top: -60px;
+        width: 50%;
     }
 }
