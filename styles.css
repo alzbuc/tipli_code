@@ -50,11 +50,14 @@ header {
 }
 
 .content__login {
-    padding: 0 12px 31.52px 12px;
-    width: 351px;
+    padding-bottom: 31.52px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .login__dialog {
+    width: 351px;
     box-sizing: border-box;
     position: relative;
     border: 2px solid #61A60E;
