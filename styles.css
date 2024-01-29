@@ -74,15 +74,16 @@ header {
 .login__dialog__header {
     position: absolute;
     top: -20px;
-    background-color: #61A60E;
-    border-radius: 4px;
     padding: 8px 16px;
     text-transform: uppercase;
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 1px;
-    color: #FFFFFF;
+    border: 2px solid #61A60E;
+    border-radius: 4px;
+    background-color: #FFFFFF;
+    color: #61A60E;
 }
 
 .login__dialog__input {
@@ -303,6 +304,12 @@ input {
 
     .login__dialog {
         margin-top: 104px;
+    }
+
+    .login__dialog__header {
+        border: none;
+        background-color: #61A60E;
+        color: #FFFFFF;
     }
 
     .login__dialog__donkey {
